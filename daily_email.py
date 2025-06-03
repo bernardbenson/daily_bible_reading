@@ -19,7 +19,7 @@ def format_reading(reading):
 # Function to send the email
 def send_email(subject, body, recipients, sender_name):
     from_email = "bernardvbenson@gmail.com"
-    from_password = "yzxr hlsp ahms dckw"
+    from_password = "" #put password here
     
     # Format the "From" field to include the sender's name
     formatted_from = f"{sender_name} <{from_email}>"
