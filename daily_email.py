@@ -55,7 +55,7 @@ if day_of_week in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']:
         subject = f"Daily Bible Reading for {today.strftime('%x')}"
         body = reading['reading'].values[0]
         body = format_reading(body)
-        recipients = ['CahabaChurch@googlegroups.com','bernardbenson.dl@gmail.com']
+        recipients = [] # email goes here in a list or just one e-mail
         send_email(subject, body, recipients, "Bernard Benson")
     else:
         print("No reading for today.")
